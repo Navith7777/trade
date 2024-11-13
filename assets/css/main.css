@@ -1696,13 +1696,14 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: rgba(0, 0, 0, 0.15); /* Light black (15% opacity) */
   opacity: 1;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: rgba(0, 0, 0, 0.5); /* Darker black (50% opacity) */
 }
+
 
 .testimonials .swiper-slide {
   opacity: 0.3;
