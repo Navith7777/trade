@@ -2,1040 +2,889 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Fx vibe</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <title>Fx vibe</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/vendor.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Favicon -->
+    <link href="images/logo.png" rel="icon" width="32" height="32">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
-  <!-- =======================================================
-  * Template Name: QuickStart
-  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <style>
-<<<<<<< HEAD
-    .featured-services .service-item .icon {
-      background-color: 
-  color-mix(in srgb, #29e9ee, transparent 80%);}
-    /* From Uiverse.io by javierBarroso */ 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 120px);
-  grid-template-rows: repeat(2, 100px);
-  grid-template-areas: "a b" "c b";
-  gap: 15px;
-}
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-.red {
-  background-color: #67aaf7;
-  grid-area: a;
-}
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-.blue {
-  background-color: #dda36c;
-  grid-area: b;
-}
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .y {
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+/* From Uiverse.io by MikeAndrewDesigner */ 
 
-.green {
-  background-color: #bc8acf;
-  grid-area: c;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: 400ms;
-}
-
-.cards .card p.tip {
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.cards .card p.second-text {
-  font-size: 0.7em;
-}
-
-.cards .card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px #4444;
-}
-
-.cards:hover > .card:not(:hover) {
-  filter: blur(4px);
-  transform: scale(0.9, 0.9);
-}
-
-    .about .content ul i {
-      font-size: 1.25rem;
-      margin-right: 4px;
-      color: #e7ea0b;
-  }
-    /* From Uiverse.io by adamgiebl */ 
-/* Inspired by twitter.com/marina_uiux */
-.about .content .read-more {
-  background: #090909;
-}
-
-:root {
-    
-    --accent-color: #090909;
-}
-.button {
-  font-size: 17px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
-  color: rgb(218, 218, 218);
-  border: none;
-  padding: 2px;
-  font-weight: 700;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-=======
-    .about .content ul i {
-      font-size: 1.25rem;
-      margin-right: 4px;
-      color: #e7ea0b;
-  }
-    /* From Uiverse.io by adamgiebl */ 
-/* Inspired by twitter.com/marina_uiux */
-.about .content .read-more {
-  background: #090909;
-}
-
-:root {
-    
-    --accent-color: #090909;
-}
-.button {
-  font-size: 17px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
-  color: rgb(218, 218, 218);
-  border: none;
-  padding: 2px;
-  font-weight: 700;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
->>>>>>> 207887b535c0e0c2056879a1c5078b8f3232d8af
-.button span {
-  border-radius: 10px;
-  padding: 0.8em 1.3em;
-  padding-right: 1.2em;
-  text-shadow: 0px 0px 20px #4b4b4b;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: inherit;
-  transition: all 0.3s;
-  background-color: rgb(29, 29, 29);
-  background-image: radial-gradient(at 95% 89%, rgb(15, 15, 15) 0px, transparent 50%), radial-gradient(at 0% 100%, rgb(17, 17, 17) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);
-}
-
-.button:hover span {
-  background-color: rgb(26, 25, 25);
-}
-
-.button-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
-  filter: opacity(10%) contrast(105%);
-  -webkit-filter: opacity(10%) contrast(105%);
-}
-
-.button svg {
-  width: 15px;
-  height: 15px;
-}
-/* From Uiverse.io by SelfMadeSystem */ 
-.frutiger-button {
-  cursor: pointer;
-  position: relative;
-  padding: 2px;
-  border-radius: 6px;
-  border: 0;
-  text-shadow: 1px 1px #000a;
-  background: linear-gradient(#006caa, #00c3ff);
-  box-shadow: 0px 4px 6px 0px #0008;
-  transition: 0.3s all;
-}
-
-.frutiger-button:hover {
-  box-shadow: 0px 6px 12px 0px #0009;
-}
-
-.frutiger-button:active {
-  box-shadow: 0px 0px 0px 0px #0000;
-}
-
-.inner {
-  position: relative;
-  inset: 0px;
-  padding: 1em;
-  border-radius: 4px;
-  background: radial-gradient(circle at 50% 100%, #30f8f8 10%, #30f8f800 55%),
-    linear-gradient(#00526a, #009dcd);
-  overflow: hidden;
-  transition: inherit;
-}
-
-.inner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(-65deg, #0000 40%, #fff7 50%, #0000 70%);
-  background-size: 200% 100%;
-  background-repeat: no-repeat;
-  animation: thing 3s ease infinite;
-}
-
-@keyframes thing {
-  0% {
-    background-position: 130%;
-    opacity: 1;
-  }
-
-  to {
-    background-position: -166%;
-    opacity: 0;
-  }
-}
-
-.top-white {
-  position: absolute;
-  border-radius: inherit;
-  inset: 0 -8em;
-  background: radial-gradient(
-    circle at 50% -270%,
-    #fff 45%,
-    #fff6 60%,
-    #fff0 60%
-  );
-  transition: inherit;
-}
-
-.inner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  transition: inherit;
-  box-shadow: inset 0px 2px 8px -2px #0000;
-}
-
-.frutiger-button:active .inner::after {
-  box-shadow: inset 0px 2px 8px -2px #000a;
-}
-
-.text {
-  position: relative;
-  z-index: 1;
-  color: white;
-  font-weight: 550;
-  transition: inherit;
-}
-
-.read-more{
-  cursor: pointer;
-  position: relative;
-  padding: 2px;
-  border-radius: 6px;
-  border: 0;
-  text-shadow: 1px 1px #000a;
-  background: linear-gradient(#006caa, #00c3ff);
-  box-shadow: 0px 4px 6px 0px #0008;
-  transition: 0.3s all;
-}
-  
-  .titlee {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px; /* Add space between items */
-      font-family: Arial, sans-serif;
+.e-card {
+    margin: 100px auto;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: 240px;
+    height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
   }
   
-  .titlee span,
-  .titlee .percent,
-  .titlee .data-value {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      color: #333;
+  .wave {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
   }
   
-  .data-value {
-      font-weight: bold;
-      font-size: 16px;
-      color: #0073e6; /* Primary color for emphasis */
+  .icon {
+    width: 3em;
+    margin-top: -1em;
+    padding-bottom: 1em;
   }
   
-
-    /* From Uiverse.io by Yaya12085 */ 
-    .card1 {
-      width: 400px;
-      padding: 10px;
-      background-color: #090909;
-      /* border: 1px solid #ddd; */
-      border-radius: 8px;
-      gap: 57px;
-      display: flex;
+  .infotop {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 5.6em;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  .name {
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    top: 1em;
+    text-transform: lowercase;
+  }
+  
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 210px;
+  }
+  
+  .playing .wave {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+  }
+  
+  .wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
-.titlee {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
+        
 
-.titlee span {
-  position: relative;
-  padding: 0.5rem;
-  background-color: #10B981;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 9999px;
-}
+        .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+            color:  #FFD700                  !important;
+        }
+        .cards__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjusts alignment */
+            gap: 1rem; /* Adds space between flex items */
+          }
+          
+          /* System (Desktop) View */
+          @media (min-width: 768px) {
+            .cards__inner {
+              justify-content: flex-start; /* Adjusts alignment for larger screens */
+              gap: 2rem; /* Increases space for larger screens */
+            }
+          }
+          
+          /* Mobile View */
+          @media (max-width: 767px) {
+            .cards__inner {
+              flex-direction: column; /* Stack items vertically on mobile */
+              align-items: center;
+            }
+          }
+          
 
-.titlee span svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  height: 1rem;
-}
 
-.titlee-text {
-  margin-left: 0.5rem;
-  color: #374151;
-  font-size: 18px;
-}
 
-.percent {
-  margin-left: 0.5rem;
-  color: #02972f;
-  font-weight: 600;
-  display: flex;
-}
-
-.data {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.data p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #1F2937;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-  text-align: left;
-}
-
-.data .range {
-  position: relative;
-  background-color: #E5E7EB;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.data .range .fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #10B981;
-  width: 76%;
-  height: 100%;
-  border-radius: 0.25rem;
-}
-
-    section, .section {
-      color: var(--default-color);
-      background-color: var(--background-color);
-      padding: 116px 0;
-      scroll-margin-top: 100px;
-      overflow: clip;
+        /* From Uiverse.io by AnthonyPreite */ 
+.main__heading {
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    color: #eceff1;
   }
+  
+  .cards {
+    position: relative;
+  }
+  
+  .card {
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 14rem;
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: start;
+    gap: 1.25em;
+    color: #eceff1;
+    background-color: #2b2b2b;
+    border: 1px solid #eceff133;
+    border-radius: 15px;
+  }
+  
+  .card:nth-child(1) {
+    --hue: 165;
+    --saturation: 82.26%;
+    --lightness: 51.37%;
+  }
+  
+  .card__bullets {
+    line-height: 1.4;
+  }
+  
+  .card__heading {
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  
+  .card__price {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  
+  .flow > * + * {
+    margin-top: var(--flow-space, 1.25em);
+  }
+  
+  .cta {
+    display: block;
+    align-self: end;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    outline: 1px solid white;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .card:hover {
+    --lightness: 80%;
+    background: #ffffff80;
+    color: #000;
+    outline: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 80px whitesmoke, inset 20px 0 80px rgba(255, 0, 255, 0.747),
+      inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+      0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .card:hover > .cta {
+    outline: none;
+    background-color: #0d0d0d;
+  }
+  
+        .service-item.d-flex.flex-column.justify-content-center.text-center.rounded {
+            height: 416px;
+        }
+        .bg-primary {
+            background-color: #2892cc !important;
+        }
 
-  section, .section {
-    color: var(--default-color);
-    background-color: #090909;
-    padding: 116px 0;
-    scroll-margin-top: 100px;
-    overflow: clip;
-}
+
+        .navbar-light .navbar-nav .nav-link {
+            position: relative;
+            margin-left: 25px;
+            padding: 35px 0;
+            color: #0f0f10 !important;
+            outline: none;
+            transition: .5s;
+        }
 
 
-.footer {
-  color: var(--default-color);
-  background-color: #040404;
-  font-size: 14px;
-  padding-bottom: 50px;
-  position: relative;
-}
+        .service-item.d-flex.flex-column.justify-content-center.text-center.rounded {
+            height: 416px;
+        }
+        .bg-primary {
+            background-color: #d48831 !important;
+        }
 
-.light-background {
-  --background-color: #ffffff;
-  --surface-color: #242121;
-}
-  </style>
+
+        .navbar-light .navbar-nav .nav-link {
+            position: relative;
+            margin-left: 25px;
+            padding: 35px 0;
+            color: #0f0f10 !important;
+            outline: none;
+            transition: .5s;
+        }
+
+
+        .navbar-light .navbar-nav .nav-link.active {
+            color:  #FFD700                  !important;
+        }
+    </style>
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">FxVibe</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>          
-          <li><a href="index.html#about" class="active">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Models</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-
-              <li><a href="#">Steller</a></li>
-              <li><a href="#">Evaluations</a></li>
-              <li><a href="#">Express</a></li>
-            </ul>
-          </li>
-
-          <li><a href="index.html#hero" >FAQ</a></li>
-          <li class="dropdown"><a href="#"><span>Be a partner</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-
-              <li><a href="#">Affiliate partner</a></li>
-              <li><a href="#">Affluence Seasons 2</a></li>
-              <li><a href="#">Partners' FAQ</a></li>
-              <li><a href="#">Affiliate Login</a></li>
-
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Models</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-
-              <li><a href="#">Steller</a></li>
-              <li><a href="#">Evaluations</a></li>
-              <li><a href="#">Express</a></li>
-            </ul>
-          </li>
-          <!-- <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li> -->
-
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Login</a>
-      <a class="btn-getstarted" href="index.html#about">Sign in</a>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-  
-    <!-- Featured Services Section -->
- 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="who-we-are">Our Platform, Your Success</p>
-            <h3>Empowering Promising Traders Worldwide</h3>
-        
-            <ul>
-<div class="card1">
-    <div class="titlee1">
-        <span>
-            <svg width="20" fill="currentColor" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z"></path>
-            </svg>
-        </span>
-
-        <p class="percent">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor" height="20" width="20">
-                <path d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"></path>
-            </svg> Our Platform
-        </p>
-
-    </div>
-
-    <!-- Second Titlee1 -->
-    <div class="titlee1">
-        <span>
-            <svg width="20" fill="currentColor" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z"></path>
-            </svg>
-        </span>
-
-        <p class="percent">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor" height="20" width="20">
-                <path d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"></path>
-            </svg> Our Platform
-        </p>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
 
-    </div>
-
-    <!-- Third Titlee1 -->
-    <div class="titlee1">
-        <span>
-            <svg width="20" fill="currentColor" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z"></path>
-            </svg>
-        </span>
-
-        <p class="percent">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor" height="20" width="20">
-                <path d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"></path>
-            </svg> Our Platform
-        </p>
-
-    
-
-    </div>
-
-    <!-- Fourth Titlee1 -->
- 
-
-    <!-- Fifth Titlee1 -->
-
-    
-</div>
-<p class="who-we-are">Profit-Focused</p>
-<ul>
-  <li><i class="bi bi-check-circle"></i> <span>Growth, discipline, consistency, risk management, profit, strategy, patience, confidence, precision, execution.
-
-  </span></li>
-  <p class="who-we-are">Market Analysis</p>
-
-  <li><i class="bi bi-check-circle"></i> <span>Trends, data-driven, research, insights, strategy, analytics, forecasting, informed decisions, timing, opportunity.</span></li>
-  <p class="who-we-are">Sustainable Success</p>
-  <li><i class="bi bi-check-circle"></i> <span>Long-term, resilience, adaptation, learning, growth mindset, innovation, evolution, future-oriented, steady progress, insights.</span></li>
-
-</ul>
-
-
-
-
-            
-
-            </ul>
-            <a href="#" class="read-more">
-              <div class="inner">
-                <div class="top-white"></div>
-                <span class="text">Start Challenge
-                  </span>
-              </div>
-            </a>
-            <a href="#" class="read-more">
-              <button class="button">
-                <div class="button-overlay"></div>
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58" height="58" width="53">
-              <path stroke-width="9" stroke="currentColor" d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"></path>
-              </svg>                  Free Trial
-            </span>
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">
+                        <!-- Replace the logo with your actual image file path -->
+                        <img src="images/logo.png" alt="Logo" style="height: 40px;"> 
+                        Forex <span class="fs-5">livehub</span>
+                    </h1>
+                </a>
                 
-              </button></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="prize.html" class="nav-item nav-link">Price</a>
 
-          </div>
-
-          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                  </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
                 </div>
-              </div>
-            </div>
+            </nav>
 
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn">"Empowering Promising Traders Worldwide"</h1>
+                            <p class="text-white pb-3 animated zoomIn">Our Platform, Your Success</p>
+                            <a href="contact.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Start Challenge</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid" src="img/flat-hand-drawn-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        
+
+
+
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
+                    <h2 class="mt-2">Maximize Your Trading Success with FundedNext.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-coins fa-beat" ></i>                      
+                                </div>
+                            <h5 class="mb-3">15% Profit Share in Challenge Phase</h5>
+                            <p>FundedNext is the only trading prop firm that offers a 15% profit share from the Challenge Phase profits, so you can start earning immediately.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-scale-balanced fa-beat fa-2x"></i>
+                                                             </div>
+                            <h5 class="mb-3">Balance-Based Drawdown</h5>
+                            <p>FundedNext offers a balance-based drawdowns, ensuring traders can hold their trades tension-free.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-newspaper fa-beat-fade fa-2x" ></i>                            </div>
+                            <h5 class="mb-3">News Trading</h5>
+                            <p>FundedNext allows news trading so you can quickly make profits by utilizing big market movements when a high-impact news is announced.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-brands fa-trade-federation fa-2x" ></i>                           </div>
+                            <h5 class="mb-3">Reset & Topup</h5>
+                            <p>Reset or top-up your account to restart your trading journey, even if you’ve violated any rules.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-book fa-fade fa-2x"></i>                            </div>
+                            <h5 class="mb-3">Monthly Competition</h5>
+                            <p>FundedNext hosts free monthly competitions where you can compete for exclusive rewards.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-earth-americas fa-2x"></i>                    
+                                 </div>
+                            <h5 class="mb-3">Reset & Topup</h5>
+                            <p>Reset or top-up your account to restart your trading journey, even if you’ve violated any rules.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <!-- <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Our Services</span></h1> -->
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Experience Section-->
+                    <section>
+                        <!-- <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                            
+                            <a class="btn btn-primary px-4 py-3" href="#!">
+                                <div class="d-inline-block bi bi-download me-2"></div>
+                                Download Resume
+                            </a>
+                        </div> -->
+                        <!-- Experience Card 1-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/trade 1.avif" alt="Web Developer" class="img-fluid rounded-4">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2"> No Time Limit</div>
+                                        Trade with no rush on our Stellar Challenges and execute your trading strategies at your own pace.</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience Card 2-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/trade 2.avif" alt="Web Developer" class="img-fluid rounded-4">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2"> Balance-based Drawdown</div>
+                                        Experience absolute freedom and hold your trades tension-free with our drawdowns calculated on your balance.</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/trade 3.avif" alt="Web Developer" class="img-fluid rounded-4">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2">
+                                            Fastest FundedNext Challenge</div>
+                                            Get your FundedNext Accounts with only just 2 days of trading with Stellar 1-Step and 5 days of trading with Stellar 2-Step.</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/trade 4.avif" alt="Web Developer" class="img-fluid rounded-4">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2">
+                                            Up to 95% Profit Share</div>
+                                            Keep up to 95% of the profits you make with your FundedNext Stellar 1-Step and 2-Step Accounts.</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/trade 5.avif" alt="Web Developer" class="img-fluid rounded-4">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2">Attendance Details</div>
+                                        "Track attendance effortlessly with our system, providing detailed logs of presence, absences, and punctuality. Stay informed with real-time data, reports, and insights for accurate record-keeping and efficient management."</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Education Section-->
+                    <section>
+                        <!-- Education Card 1-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/trade 8.avif" alt="Web Developer" class="img-fluid rounded-4">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2">FundedNext Community                                        </div>
+                                        Serving over 700,000+ members</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Education Card 2-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <img src="img/portfolio-2.jpg" alt="Web Developer" class="img-fluid rounded-4">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8"><div>
+                                        <div class="text-secondary fw-bolder mb-2">24/7
+                                            Pro Support</div>
+                                            With a 50-second average response time, we’re a prop trading firm that truly cares about our traders.</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Divider-->
+                    <div class="pb-5"></div>
+                    <!-- Skills Section-->
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Start -->
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <!-- <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Pricing Pack</span></h1> -->
+            </div>
+            
+
+
+            <div class="cards__inner">
+                <!-- Free Plan -->
+                <div class="cards__card card">
+                  <p class="card__heading">Stellar</p>
+                  <p class="card__price">The most popular package amongst FundedNext traders</p1>
+                  <ul class="card_bullets flow" role="list">
+                    <li>Upto 95% Profit Split</li>
+                    <li>15% Profit Share in Challenge Phase</li>
+                    <li>Up to 150% Reward</li>
+                    <li>Up to 150% Reward</li>
+                    <li>No Time Limit</li>
+                    <li>News Trading Allowed</li>
+                  </ul>
+                  <a class="card__cta cta" href="#free">Start Challenge</a>
+                </div>
+                
+                <div class="overlay cards__inner"></div>
+              
+                <!-- Basic Plan -->
+                <div class="cards__card card">
+                    <p class="card__heading">Stellar</p>
+                    <p class="card__price">The most popular package amongst FundedNext traders</p1>
+                    <ul class="card_bullets flow" role="list">
+                      <li>Upto 95% Profit Split</li>
+                      <li>15% Profit Share in Challenge Phase</li>
+                      <li>Up to 150% Reward</li>
+                      <li>Up to 150% Reward</li>
+                      <li>No Time Limit</li>
+                      <li>News Trading Allowed</li>
+                    </ul>
+                  <a class="card__cta cta" href="#basic">Start Challenge</a>
+                </div>
+                
+                <div class="overlay cards__inner"></div>
+              
+                <!-- Platinum Plan -->
+                <div class="cards__card card">
+                    <p class="card__heading">Express</p>
+                    <p class="card__price">The most popular package amongst FundedNext traders</p1>
+                    <ul class="card_bullets flow" role="list">
+                      <li>Upto 95% Profit Split</li>
+                      <li>15% Profit Share in Challenge Phase</li>
+                      <li>Up to 150% Reward</li>
+                      <li>Up to 150% Reward</li>
+                      <li>No Time Limit</li>
+                      <li>News Trading Allowed</li>
+                    </ul>
+                  <a class="card__cta cta contact" href="mailto:sales@wizbees.co.in?subject=Platinum%20Plan%20Inquiry">Start Challenge</a>
+                  <!-- Contact Us Button for Platinum -->
+                </div>
+              
+                <div class="overlay cards__inner"></div>
+              </div>
+              
+
+
+
+        </div>
+
+
+    </div>
+        <!-- Portfolio End -->
+
+
+        <!-- Testimonial Start -->
+          
+        <!-- Testimonial End -->
+     
+        <div class="y">
+
+        <div class="e-card playing">
+            <div class="image"></div>
+            
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            
+          
+                <div class="infotop">
+          
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+            <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+            4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+            21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+            22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+            17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+            14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+            3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+            19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+            12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+            16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+            15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+            19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+             16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+             20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+             5% Daily Drawdown          <br>
+          <div class="name">Traders are allowed a maximum of 10% loss from the initial balan</div>
+            </div>
+          </div>
+          <div class="e-card playing">
+            <div class="image"></div>
+            
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            
+          
+                <div class="infotop">
+          
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+            <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+            4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+            21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+            22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+            17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+            14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+            3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+            19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+            12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+            16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+            15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+            19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+             16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+             20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+             5% Daily Drawdown          <br>
+          <div class="name">Traders are allowed a maximum of 10% loss from the initial balan</div>
+            </div>
           </div>
 
-        </div>
 
-      </div>
-
-        </div>
-
-      </div>
-    </section><!-- /About Section -->
-
-<!-- /Featured Services Section -->
-
-
-    <!-- Clients Section -->
- 
-    <!-- Features Section -->
- 
-    <!-- Features Details Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Key Highlights</h2>
-        <p>Maximize Your Trading Success with FundedNext.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <div>
-                <h3>15% Profit Share in Challenge Phase</h3>
-                <p>Fxvibe is the only trading prop firm that offers a 15% profit share from the Challenge Phase profits, so you can start earning immediately.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <div>
-                <h3>Balance-Based Drawdown</h3>
-                <p>Fxvibe offers a balance-based drawdowns, ensuring traders can hold their trades tension-free.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <div>
-                <h3>News Trading</h3>
-                <p>Fxvibe allows news trading so you can quickly make profits by utilizing big market movements when a high-impact news is announced.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <div>
-                <h3>Reset & Topup</h3>
-                <p>Reset or top-up your account to restart your trading journey, even if you’ve violated any rules.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <div>
-                <h3>Monthly Competition</h3>
-                <p>Fxvibe hosts free monthly competitions where you can compete for exclusive rewards.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <div>
-                <h3>Trading Success </h3>
-                <p>
-                  Profit, strategy, analysis, growth, discipline, risk, consistency, trends, patience, execution.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section>
-    <section class="py-3" style="background-color: black;">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="banner-blocks">
+          <div class="e-card playing">
+            <div class="image"></div>
             
-              <div class="banner-ad large bg-info block-1">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            
+          
+                <div class="infotop">
+          
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+            <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+            4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+            21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+            22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+            17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+            14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+            3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+            19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+            12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+            16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+            15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+            19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+             16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+             20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+             Profit Target (5% to 10%)          <br>
+          <div class="name">Our evaluation model has two assessment phases. In phase-01, you</div>
+            </div>
+          </div>
 
-                <div class="swiper main-swiper">
-                  <div class="swiper-wrapper">
-                    
-                    <div class="swiper-slide">
-                      <div class="row banner-content p-5">
-                        <div class="content-wrapper col-md-7">
-                          <div class="categories my-3">〽️ Your Choice!</div>
-                          <h3 class="display-4">Best Trading Platforms</h3>
-                          <h2 class="display-4">Trade on MT4, MT5 & cTrader platforms</h2>
 
-                          <p>Our MQ licenses and advanced in house technology ensure enhanced experience, security and efficiency.</p>
-                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
+          <div class="e-card playing">
+            <div class="image"></div>
+            
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            
+          
+                <div class="infotop">
+          
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+            <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+            4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+            21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+            22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+            17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+            14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+            3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+            19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+            12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+            16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+            15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+            19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+             16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+             20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+             Bi-Weekly Reward          <br>
+          <div class="name">In your FundedNext Account, you will be eligible to withdraw you</div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Team Start -->
+
+        <!-- Team End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>########</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>#######</p>
+                        <p><i class="fa fa-envelope me-3"></i>mail</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <div class="img-wrapper col-md-5">
-                          <!-- <img src="images/product-thumb-1.png" class="img-fluid"> -->
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Project Gallery</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/trade 1.avif" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/trade 2.avif" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/trade 3.avif" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/trade 4.avif" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/trade 4.avif" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/trade 2.avif" alt="Image">
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
                     
-                    <!-- <div class="swiper-slide">
-                      <div class="row banner-content p-5">
-                        <div class="content-wrapper col-md-7">
-                          <div class="categories mb-3 pb-3">100% natural</div>
-                          <h3 class="banner-title">Fresh Smoothie & Summer Juice</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
-                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Stay updated. Subscribe to our newsletter.</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
-                        <div class="img-wrapper col-md-5">
-                          <img src="images/product-thumb-1.png" class="img-fluid">
-                        </div>
-                      </div>
-                    </div> -->
-                    
-                    <!-- <div class="swiper-slide">
-                      <div class="row banner-content p-5">
-                        <div class="content-wrapper col-md-7">
-                          <div class="categories mb-3 pb-3">100% natural</div>
-                          <h3 class="banner-title">Heinz Tomato Ketchup</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
-                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
-                        </div>
-                        <div class="img-wrapper col-md-5">
-                          <img src="images/product-thumb-2.png" class="img-fluid">
-                        </div>
-                      </div>
-                    </div> -->
-                  </div>
-                  
-                  <div class="swiper-pagination"></div>
-
+                    </div>
                 </div>
-              </div>
-              
-              <div class="banner-ad bg-success-subtle block-2">
-                <div class="row banner-content p-5">
-
-                  <div class="content-wrapper col-md-7">
-                    <div class="categories sale mb-3 pb-3">Guaranteed
-                      Payouts</div>
-                    <h3 class="banner-title">Get paid in 24 hours or
-                      we pay $1,000 extra.</h3>
-                    <a href="#" class="d-flex align-items-center nav-link">Trade Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
-                  </div>
-
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Copyright © 2024 Forexlivehub.</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="contact.html">Contact</a>
+                               
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div class="banner-ad bg-danger block-3" >
-                <div class="row banner-content p-5">
-
-                  <div class="content-wrapper col-md-7">
-                    <div class="categories sale mb-3 pb-3">Best Trading Conditions</div>
-                    <h3 class="item-title">Raw Spreads</h3>
-                    <h3 class="item-title">Guaranteed payouts within 24 hours</h3>
-
-                    <h3 class="item-title">Low commissions</h3>
-
-                    <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
-                  </div>
-
-                </div>
-              </div>
-
             </div>
-            <!-- / Banner Blocks -->
-              
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- /Services Section -->
-    <section id="featured-services" class="featured-services section light-background">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex">
-              
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-              </div>
-            </div>
-            
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exa</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
+        <!-- Footer End -->
 
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <p class="popular">Popular</p>
-              <h3>Business Plan</h3>
-              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li><i class="bi bi-check"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
- 
-    <!-- Testimonials Section -->
-   
-    <!-- Contact Section -->
-  
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">QuickStart</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p> Street</p>
-            <p> NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+91 88709 68504</span></p>
-            <p><strong>Email:</strong> <span>arun@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Fx vibe trade</strong><span>All Rights Reserved</span></p>
-      <div class="credits">
-     
-        Designed by <a href=""></a> Arun 
-    </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

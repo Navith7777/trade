@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Time Bee</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+        .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+            color:  #FFD700                  !important;
+        }
+        .cards__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjusts alignment */
+            gap: 1rem; /* Adds space between flex items */
+          }
+          
+          /* System (Desktop) View */
+          @media (min-width: 768px) {
+            .cards__inner {
+              justify-content: flex-start; /* Adjusts alignment for larger screens */
+              gap: 2rem; /* Increases space for larger screens */
+            }
+          }
+          
+          /* Mobile View */
+          @media (max-width: 767px) {
+            .cards__inner {
+              flex-direction: column; /* Stack items vertically on mobile */
+              align-items: center;
+            }
+          }
+          
+
+
+
+        /* From Uiverse.io by AnthonyPreite */ 
+.main__heading {
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    color: #eceff1;
+  }
+  
+  .cards {
+    position: relative;
+  }
+  
+  .card {
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 14rem;
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: start;
+    gap: 1.25em;
+    color: #eceff1;
+    background-color: #2b2b2b;
+    border: 1px solid #eceff133;
+    border-radius: 15px;
+  }
+  
+  .card:nth-child(1) {
+    --hue: 165;
+    --saturation: 82.26%;
+    --lightness: 51.37%;
+  }
+  
+  .card__bullets {
+    line-height: 1.4;
+  }
+  
+  .card__heading {
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  
+  .card__price {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  
+  .flow > * + * {
+    margin-top: var(--flow-space, 1.25em);
+  }
+  
+  .cta {
+    display: block;
+    align-self: end;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    outline: 1px solid white;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .card:hover {
+    --lightness: 80%;
+    background: #ffffff80;
+    color: #000;
+    outline: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 80px whitesmoke, inset 20px 0 80px rgba(255, 0, 255, 0.747),
+      inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+      0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .card:hover > .cta {
+    outline: none;
+    background-color: #0d0d0d;
+  }
+  
+        .service-item.d-flex.flex-column.justify-content-center.text-center.rounded {
+            height: 416px;
+        }
+        .bg-primary {
+            background-color: #2892cc !important;
+        }
+
+
+        .navbar-light .navbar-nav .nav-link {
+            position: relative;
+            margin-left: 25px;
+            padding: 35px 0;
+            color: #0f0f10 !important;
+            outline: none;
+            transition: .5s;
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">
+                        <!-- Replace the logo with your actual image file path -->
+                        <img src="img/logo.png" alt="Logo" style="height: 40px;"> 
+                        TIME<span class="fs-5">BEE</span>
+                    </h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="prize.html" class="nav-item nav-link active">Price</a>
+
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">Pricing</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Pricing Pack</span></h1>
+            </div>
+            
+
+
+            <div class="cards__inner">
+                <!-- Free Plan -->
+                <div class="cards__card card">
+                  <p class="card__heading">Free Plan</p>
+                  <p class="card__price">$0/month</p>
+                  <ul class="card_bullets flow" role="list">
+                    <li>Access to basic features</li>
+                    <li>5 GB storage</li>
+                    <li>Ads included</li>
+                  </ul>
+                  <a class="card__cta cta" href="#free">Get Started</a>
+                </div>
+                
+                <div class="overlay cards__inner"></div>
+              
+                <!-- Basic Plan -->
+                <div class="cards__card card">
+                  <p class="card__heading">Basic Plan</p>
+                  <p class="card__price">$9.99/month</p>
+                  <ul class="card_bullets flow" role="list">
+                    <li>Access to all features</li>
+                    <li>50 GB storage</li>
+                    <li>No ads</li>
+                  </ul>
+                  <a class="card__cta cta" href="#basic">Get Started</a>
+                </div>
+                
+                <div class="overlay cards__inner"></div>
+              
+                <!-- Platinum Plan -->
+                <div class="cards__card card">
+                  <p class="card__heading">Platinum Plan</p>
+                  <p class="card__price">$29.99/month</p>
+                  <ul class="card_bullets flow" role="list">
+                    <li>Access to all features</li>
+                    <li>Unlimited storage</li>
+                    <li>No ads</li>
+                    <li>Priority support</li>
+                  </ul>
+                  <a class="card__cta cta contact" href="mailto:sales@wizbees.co.in?subject=Platinum%20Plan%20Inquiry">Contact Us</a>
+                  <!-- Contact Us Button for Platinum -->
+                </div>
+              
+                <div class="overlay cards__inner"></div>
+              </div>
+              
+
+
+
+        </div>
+
+
+    </div>
+        <!-- Portfolio Start -->
+   
+        <!-- Portfolio End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>C-21,Kolapakkam, Chennai</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 86677 25003</p>
+                        <p><i class="fa fa-envelope me-3"></i>sales@wizbees.co.in</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Project Gallery</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/iot2.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/iot5.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/blast3.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/mineblast2.jpg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/mineblast3.jpg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/outdoor4.jpg" alt="Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Stay updated. Subscribe to our newsletter.</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Copyright © 2024 Wizbees Technologies pvt Ltd.</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="contact.html">Contact</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Time Bee</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .card-image {
+            width: 199px;
+            margin: auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 64px; /* optional: adds space between cards */
+          }
+          
+          .card {
+            flex: 0 0 30%; /* Default: Each card takes 1/3 of the container */
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+          }
+          
+          /* Adjust for tablets and smaller screens */
+          @media (max-width: 992px) {
+            .card {
+              flex: 0 0 45%; /* 2 cards per row */
+            }
+          }
+          
+          /* Adjust for mobile screens */
+          @media (max-width: 768px) {
+            .card {
+              flex: 0 0 100%; /* 1 card per row */
+            }
+          }
+          
+          .card-image {
+            background-color: #f0f0f0;
+            height: 150px;
+            margin-bottom: 15px;
+          }
+          
+          .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+          }
+          
+          .card-body {
+            flex-grow: 1;
+            font-size: 1em;
+          }
+          
+          .footer {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 10px;
+          }
+          
+
+        /* From Uiverse.io by Sashank02 */ 
+        .card {
+            padding: 20px;
+            width: 330px;
+            min-height: 370px;
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow: 5px 5px 8px #867b7b, -5px -5px 8px #b1acac;
+            transition: 0.4s;
+        }
+  .card:hover {
+    translate: 0 -10px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0c0c0b;
+    margin: 15px 0 0 10px;
+  }
+  
+  .card-image {
+    background-color: #f0f0f0;
+    height: 150px; /* You can adjust this height as needed */
+    overflow: hidden; /* Ensures that the image doesn't overflow the container */
+  }
+  
+  .card-image img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Ensure the image covers the full height of the container */
+    object-fit: cover; /* Ensures the image is cropped while maintaining its aspect ratio */
+  }
+  
+  .card-image {
+    
+    min-height: 170px;
+    background-color: #313131;
+    border-radius: 15px;
+    background: #313131;
+    box-shadow: inset 5px 5px 3px #2f2f2f,
+              inset -5px -5px 3px #333333;
+  }
+  
+  .card-body {
+    margin: 13px 0 0 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+  }
+  
+  .footer {
+    float: right;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #b3b3b3;
+  }
+  
+  .by-name {
+    font-weight: 700;
+  }
+
+        .service-item.d-flex.flex-column.justify-content-center.text-center.rounded {
+            height: 416px;
+        }
+        .bg-primary {
+            background-color: #2892cc !important;
+        }
+
+
+        .navbar-light .navbar-nav .nav-link {
+            position: relative;
+            margin-left: 25px;
+            padding: 35px 0;
+            color: #0f0f10 !important;
+            outline: none;
+            transition: .5s;
+        }
+
+
+        .navbar-light .navbar-nav .nav-link.active {
+            color:  #FFD700                  !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">
+                        <!-- Replace the logo with your actual image file path -->
+                        <img src="img/logo.png" alt="Logo" style="height: 40px;"> 
+                        TIME<span class="fs-5">BEE</span>
+                    </h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="prize.html" class="nav-item nav-link">Price</a>
+
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">About</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+        <div class="container">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/im2.jpg" alt="Logo"> 
+            </div>
+              <p class="card-title">TimeBee Real</p>
+              <p class="card-body">
+                Our website offers real-time location tracking and distance calculation, designed to provide users with a seamless and efficient way to track their movements or find distances between different points. Whether you're planning a trip, monitoring your route, or simply curious about the exact distance between two locations, our platform delivers accurate and timely results using advanced geolocation technologies.              </p>
+            </div>
+            
+            <div class="card">
+                           <div class="card-image">
+                <img src="img/service3.avif" alt="Logo"> 
+            </div>
+              <p class="card-title">TimeBee Tracker</p>
+              <p class="card-body">
+                The website is user-friendly, featuring an intuitive interface that allows you to enter and track locations effortlessly. With the integration of responsive design principles, it ensures a smooth experience across various devices—whether you're using a mobile phone, tablet, or desktop. Our tracking system makes use of reliable APIs for real-time location updates and incorporates dynamic map features to provide a visual representation of the route and distance covered.              </p>
+            </div>
+            
+            <div class="card">
+                           <div class="card-image">
+                <img src="img/service5.avif" alt="Logo"> 
+            </div>
+              <p class="card-title">TimeBee Path</p>
+              <p class="card-body">
+
+
+                Location Tracking and Distance Calculation Website
+                Our website offers real-time location tracking and distance calculation, designed to provide users with a seamless and efficient way to track their movements or find distances between different points. Whether you're planning a trip, monitoring your route, or simply curious about the exact distance between two locations, our platform delivers accurate and timely results using advanced geolocation technologies.</p>
+            </div>
+            
+
+          </div>
+          
+
+        <!-- Portfolio Start -->
+ 
+        <!-- Portfolio End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>C-21,Kolapakkam, Chennai</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 86677 25003</p>
+                        <p><i class="fa fa-envelope me-3"></i>sales@wizbees.co.in</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Project Gallery</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/iot2.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/iot5.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/Iot.html" target="_blank">
+                                    <img class="img-fluid" src="img/blast3.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/mineblast2.jpg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/mineblast3.jpg" alt="Image">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://wizbees.co.in/minebee.html" target="_blank">
+                                    <img class="img-fluid" src="img/outdoor4.jpg" alt="Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Stay updated. Subscribe to our newsletter.</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Copyright © 2024 Wizbees Technologies pvt Ltd.</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="contact.html">Contact</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
